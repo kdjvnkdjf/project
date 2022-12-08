@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+body {
+    font-size: 12px;
+    font-family: Rubik;
+    color: #616161;
+    background-color: #eee5e5;
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    flex: 1 1 auto;
+}
+[class*='__container'] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.block-text {
+}
+.block-text-center {
+    text-align: center;
+}
+.block-text__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: #000;
+}
+.block-text__title:not(:last-child) {
+    margin: 0 0 12px 0;
+}
+.block-text__title span {
+    color: #ef4c57;
+}
+.block-text__text {
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+}
+.block-text__text:not(:last-child) {
+    margin: 0 0 24px 0;
+}
+.block-text__text-mw {
+    max-width: 620px;
+    margin: 0 auto;
+}
+.healthcare {
+    padding: 80px 0 30px 0;
+}
+.healthcare__block-text {
+    padding: 0 0 45px 0;
+}
+.healthcare__items {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.healthcare__column {
+    transition: all 0.3s ease 0s;
+    position: relative;
+    flex: 0 1 30%;
+}
+.healthcare__column:hover {
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
+        0px 20px 13px rgba(0, 0, 0, 0.015),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222),
+        3px 44px 54px rgba(0, 0, 0, 0.08);
+}
+.item-healthcare {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 17px;
+}
+.item-healthcare__icon img {
+    width: 300px;
+    height: 120px;
+    margin: 0 0 58px 0;
+}
+.item-healthcare__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    color: #000;
+}
+.item-healthcare__text {
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    color: #616161;
+}
